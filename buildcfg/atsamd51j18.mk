@@ -7,8 +7,7 @@
 # UC_LIBS - stuff passed to the linker for linking
 # DO NOT OVERWRITE; you should append "+=" instead
 
-DEV                 := attiny816
-DEV_FAMILY          := avrxmega3
-VENDOR_USE_LDSCRIPT := yes 
+DEV      := samd51j18a
+DEV_FLAG := __ATSAMD51G18A__
 
-include $(LIBROOT)/buildcfg/attiny-common.mk
+include $(LIBROOT)/buildcfg/samd51-common.mk 

@@ -4,10 +4,10 @@ export CFLAGS
 
 .PHONY: all
 all:
-	$(MAKE) -C dfp_samd51
-	$(MAKE) -C dfp_samd51_atmel
+	$(MAKE) -C dfp_atsamd51
+	$(MAKE) -C dfp_atsamd51_atmel
 
 .PHONY: clean
 clean:
-	$(MAKE) -C dfp_samd51 $@
-	$(MAKE) -C dfp_samd51_atmel $@
+	$(MAKE) -C dfp_atsamd51 $@
+	$(MAKE) -C dfp_atsamd51_atmel $@

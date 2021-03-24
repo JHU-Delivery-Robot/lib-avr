@@ -11,3 +11,6 @@ VENDOR_LDLIBS   += -B$(LIBROOT)/$(DEVKIT)/dev/$(DEV)/ -B$(LIBROOT)/$(DEVKIT)/lib
 ifdef VENDOR_USE_LDSCRIPT
 	VENDOR_LDFLAGS += -Wl,-script=$(LIBROOT)/$(DEVKIT)/ldscripts/$(DEV_FAMILY).xn
 endif
+
+include $(LIBROOT)/buildcfg/avrlibc.mk
+
