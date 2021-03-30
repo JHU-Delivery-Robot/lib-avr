@@ -31,8 +31,8 @@ LIBS := libatsamd51g18a.a libatsamd51g19a.a libatsamd51j18a.a libatsamd51j19a.a 
 ifndef V
 	V := 1
 endif
-P_CC_1 = @echo "  CC    $@";
-P_AR_1 = @echo "  AR    $@";
+P_CC_1 = @echo "  CC       $<";
+P_AR_1 = @echo "  AR       $@";
 
 
 .PHONY: all

@@ -1,4 +1,4 @@
-LIBROOT := $(shell pwd)
+LIBROOT := ..
 export LIBROOT
 export CFLAGS
 

@@ -31,8 +31,8 @@ LIBS := libsamd51g18a.a libsamd51g19a.a libsamd51j18a.a libsamd51j19a.a \
 ifndef V
 	V := 1
 endif
-P_CC_1 = @echo "  CC    $@";
-P_AR_1 = @echo "  AR    $@";
+P_CC_1 = @echo "  CC       $<";
+P_AR_1 = @echo "  AR       $@";
 
 
 .PHONY: all
